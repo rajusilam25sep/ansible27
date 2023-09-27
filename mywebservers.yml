@@ -12,14 +12,14 @@
       name: apache2
       state: started
     when: ansible_os_family== "Debian"
-  - name: in this tasks, i want to install sshd webservers on RedHat
+  - name: in this tasks, i want to install httpd webservers on RedHat
     dnf: 
-      name: sshd
+      name: httpd
       state: present
     when: ansible_os_family== "RedHat"
-  - name: in this tasks, i want to start sshd webservers on RedHat
+  - name: in this tasks, i want to start httpd webservers on RedHat
     service:
-      name: sshd
+      name: httpd
       state: started
     when: ansible_os_family== "RedHat"
    
