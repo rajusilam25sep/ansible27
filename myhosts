@@ -21,3 +21,7 @@
 
 
 
+[mywebserversvers:vars]
+var01= value
+mywebpackonubuntu= apache2
+mywebpackonredhat= httpd
