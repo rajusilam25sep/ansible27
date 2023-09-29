@@ -1,0 +1,7 @@
+---
+- hosts: 10.0.0.5
+  become: yes
+  vars: 
+      myvars1: git 
+      myvars2: tree
+      myvars3: wget
